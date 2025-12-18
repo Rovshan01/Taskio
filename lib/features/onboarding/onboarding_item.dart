@@ -22,7 +22,8 @@ class OnboardingItem extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Padding(
+            Container(
+              width: 220.0,
               padding: const EdgeInsets.only(top: 100.0, bottom: 40.0),
               child: Image.asset(image),
             ),

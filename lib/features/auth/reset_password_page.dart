@@ -12,8 +12,8 @@ class ResetPasswordPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: Container(
-        height: 700.0,
-        padding: const EdgeInsets.only(left: 25.0, right: 25.0, top: 90.0),
+        height: 600.0,
+        padding: const EdgeInsets.only(left: 25.0, right: 25.0, top: 70.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

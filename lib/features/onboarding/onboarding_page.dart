@@ -61,7 +61,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
           Positioned(
             bottom: 60.0,
             child: Container(
-              height: 300,
+              height: 270,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
