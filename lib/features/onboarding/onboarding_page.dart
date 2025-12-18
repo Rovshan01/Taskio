@@ -84,7 +84,16 @@ class _OnboardingPageState extends State<OnboardingPage> {
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.white70,
                             ),
-                            onPressed: () {},
+                            onPressed: () {
+                              if (_currentIndex < _pages.length - 1) {
+                                _pageController.nextPage(
+                                  duration: const Duration(milliseconds: 300),
+                                  curve: Curves.easeInOut,
+                                );
+                              } else {
+                                // TODO: navigate to login
+                              }
+                            },
                             child: Text(
                               'Get Started',
                               style: TextStyle(
