@@ -1,5 +1,6 @@
 import 'package:Taskio/core/constants/app_assets.dart';
 import 'package:Taskio/core/constants/app_texts.dart';
+import 'package:Taskio/features/auth/login_page.dart';
 import 'package:Taskio/features/onboarding/onboarding_item.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -106,7 +107,14 @@ class _OnboardingPageState extends State<OnboardingPage> {
 
                         /// Log in Button
                         TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => LoginPage(),
+                              ),
+                            );
+                          },
                           child: const Text(
                             'Log In',
                             style: TextStyle(

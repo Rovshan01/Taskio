@@ -1,7 +1,5 @@
-import 'package:Taskio/core/constants/app_assets.dart';
-import 'package:Taskio/core/constants/app_texts.dart';
-import 'package:Taskio/features/onboarding/onboarding_item.dart';
-import 'package:Taskio/features/onboarding/onboarding_page.dart';
+import 'package:Taskio/core/routes/app_routes.dart';
+import 'package:Taskio/features/auth/success_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,9 +16,9 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      home: OnboardingPage(),
+      routerConfig: appRouter,
     );
   }
 }

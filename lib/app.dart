@@ -1,3 +1,4 @@
+import 'package:Taskio/core/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatelessWidget {
@@ -5,9 +6,10 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'Taskio',
+      routerConfig: appRouter,
     );
   }
 }
